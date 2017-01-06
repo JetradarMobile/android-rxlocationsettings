@@ -41,8 +41,6 @@ dependencies {
 Usage
 -----
 
-Default implementation with round snowflakes:
-
 ```java
 LocationSettingsRequest locationSettingsRequest = new LocationSettingsRequest.Builder()
     .addLocationRequest(LocationRequest.create().setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY))
