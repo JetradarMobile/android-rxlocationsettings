@@ -4,7 +4,7 @@ Android-RxLocationSettings
 [![JitPack](https://jitpack.io/v/jetradarmobile/android-rxlocationsettings.svg)](https://jitpack.io/#jetradarmobile/android-rxlocationsettings)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 
-An easy way to check the settings before requesting location using RxJava.
+An easy way to check the settings before requesting location using RxJava. Based on [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation).
 
 ![image](https://raw.githubusercontent.com/JetradarMobile/android-rxlocationsettings/master/art/rxlocationsettings.png)
 
@@ -33,7 +33,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'com.github.jetradarmobile:android-rxlocationsettings:1.0.0'
+    compile 'com.github.jetradarmobile:android-rxlocationsettings:1.1.0'
 }
 ```
 
@@ -47,8 +47,8 @@ Default implementation with round snowflakes:
 LocationSettingsRequest locationSettingsRequest = new LocationSettingsRequest.Builder()
     .addLocationRequest(LocationRequest.create().setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY))
     .build();
-RxLocationSettings.with(this).checkLocationSettings(locationSettingsRequest)
-    .subscribe(resolved -> ...);
+RxLocationSettings.with(this).ensure(locationSettingsRequest)
+    .subscribe(enabled -> ...);
 ```
 
 

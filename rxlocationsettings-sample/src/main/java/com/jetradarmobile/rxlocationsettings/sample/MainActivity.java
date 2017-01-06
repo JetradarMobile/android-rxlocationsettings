@@ -18,20 +18,20 @@ public class MainActivity extends AppCompatActivity {
     findViewById(R.id.btn_check).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        checkLocationSettings();
+        ensureLocationSettings();
       }
     });
   }
 
-  private void checkLocationSettings() {
+  private void ensureLocationSettings() {
     LocationSettingsRequest locationSettingsRequest = new LocationSettingsRequest.Builder()
         .addLocationRequest(LocationRequest.create().setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY))
         .build();
-    RxLocationSettings.with(this).checkLocationSettings(locationSettingsRequest)
+    RxLocationSettings.with(this).ensure(locationSettingsRequest)
         .subscribe(new Action1<Boolean>() {
           @Override
-          public void call(Boolean resolved) {
-            Toast.makeText(MainActivity.this, resolved ? "Resolved" : "Failed", Toast.LENGTH_LONG).show();
+          public void call(Boolean enabled) {
+            Toast.makeText(MainActivity.this, enabled ? "Enabled" : "Failed", Toast.LENGTH_LONG).show();
           }
         });
   }
