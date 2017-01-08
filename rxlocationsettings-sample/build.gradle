@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 dependencies {
   compile project(':rxlocationsettings')
-  compile 'com.android.support:appcompat-v7:25.1.0'
+  compile 'com.android.support:appcompat-v7:25.0.1'
 }
 
 android {

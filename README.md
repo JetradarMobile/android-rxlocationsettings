@@ -4,6 +4,8 @@ Android-RxLocationSettings
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--RxLocationSettings-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5038)
 [![JitPack](https://jitpack.io/v/jetradarmobile/android-rxlocationsettings.svg)](https://jitpack.io/#jetradarmobile/android-rxlocationsettings)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![TravisCI](https://travis-ci.org/JetradarMobile/android-rxlocationsettings.svg?branch=master)](https://travis-ci.org/JetradarMobile/android-rxlocationsettings)
+
 
 An easy way to ensure the settings before requesting location using RxJava.
 
