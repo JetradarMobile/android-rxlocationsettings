@@ -9,6 +9,8 @@ android:
 
     - build-tools-25.0.2
     - android-25
+    - extra-google-m2repository
+    - extra-android-m2repository
 
 cache:
   directories:
