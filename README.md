@@ -1,10 +1,11 @@
 Android-RxLocationSettings
 ==========================
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--RxLocationSettings-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5038)
 [![JitPack](https://jitpack.io/v/jetradarmobile/android-rxlocationsettings.svg)](https://jitpack.io/#jetradarmobile/android-rxlocationsettings)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 
-An easy way to check the settings before requesting location using RxJava. Based on [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation).
+An easy way to ensure the settings before requesting location using RxJava.
 
 ![image](https://raw.githubusercontent.com/JetradarMobile/android-rxlocationsettings/master/art/rxlocationsettings.png)
 
@@ -49,6 +50,7 @@ RxLocationSettings.with(this).ensure(locationSettingsRequest)
     .subscribe(enabled -> ...);
 ```
 
+See [sample](https://github.com/JetradarMobile/android-rxlocationsettings/tree/master/rxlocationsettings-sample) project for more information.
 
 Credits
 -------
